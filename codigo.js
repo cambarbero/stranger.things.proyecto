@@ -31,3 +31,12 @@ interval = setInterval(function(){
 }, 1000);
 
 // -------------
+
+function aud_play_pause() {
+    var myAudio = document.getElementById("musica");
+    if (myAudio.paused) {
+      myAudio.play();
+    } else {
+      myAudio.pause();
+    }
+  }
