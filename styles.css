@@ -35,10 +35,16 @@ html *
     width: 100%;
 }
 
+.nav-item :hover {
+    color: #ffc800 !important;
+   
+}
 
-.nav-link {
+.nav-link{
     color: #cc2c2c !important;
 }
+
+
 
 .cajas{
     margin-top: 10px;
@@ -52,6 +58,8 @@ html *
     margin: 10px;
     background-color: #5e3337;
     padding: 10px;
+    border-bottom: 3px solid #000000;
+    margin-bottom:10px;
 }
 
 .fecha-publicacion{
@@ -90,7 +98,7 @@ html *
 }
 
 .body{
-    background-color: #b85c51 !important;
+    background-color: black !important;
 }
 
 .countdown{
