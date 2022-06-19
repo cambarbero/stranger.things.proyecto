@@ -177,15 +177,36 @@
                 <div class="columnfooter2">
                     <h3>Formulario de colaboracion</h3>
                     <br>
-                    Si te queres sumar al team dedicado a la informacion de la serie original de Netflix Stranger Things, completa este formulario con tus datos y nos comunicaremos
+                    Si te gusta la serie Stranger Things, y te interesa formar parte de una comunidad nos encantaria que 
+                    te sumes al team de colaboradores !. Deja tus datos acá abajo y nos comunicaremos.
                     <br>
 
                     <div id="formulario">
-                       
-                    </div>  
-
-                    <!-- fijarse de aca agregar un formulario donde poner tu nombre, apellido, mail, -->
-                
+                        <form action="/action_page.php">
+                            <div class="secciones-forms">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="fname" name="nombre" placeholder="Escribe tu nombre...">
+                            </div>
+                            <div class="secciones-forms">
+                                <label for="email">Email</label>
+                                <input type="text" id="lname" name="email" placeholder="Escribe tu email...">
+                            </div>
+                            <div class="secciones-forms">
+                                <label for="edad">Sos mayor de edad?</label>
+                                <select id="edad" name="edad">
+                                <option value="si">Si</option>
+                                <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="secciones-forms">
+                                <label for="subject">Mensaje</label>
+                                <textarea id="subject" name="subject" placeholder="Escribe un mensaje si queres mandar informacion extra"></textarea>
+                            </div>
+                            <div id="enviar" class="secciones-forms">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div> 
                 </div>
             </div>
         </footer>
