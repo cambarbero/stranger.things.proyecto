@@ -33,10 +33,26 @@ interval = setInterval(function(){
 // -------------
 
 function aud_play_pause() {
-    var myAudio = document.getElementById("musica");
+    let myAudio = document.getElementById("musica");
     if (myAudio.paused) {
       myAudio.play();
     } else {
       myAudio.pause();
+    }
+  }
+
+// -------------
+
+function ver_mas_o_menos() {
+    let masTexto = document.getElementById("mas");
+    let botonTexto = document.getElementById("boton");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
     }
   }
