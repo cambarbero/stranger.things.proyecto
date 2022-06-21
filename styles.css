@@ -159,7 +159,7 @@ body{
     padding: 5px;
 }
 
-p{
+#dias, #horas, #minutos, #segundos{
     display: grid;
     place-items: center;
     height:50px;
@@ -219,7 +219,7 @@ footer{
     background-color: rgba(47, 112, 149, 0.85);
     width: 100%;
     color: #cc2c2c;
-    
+    position: absolute;
 }
 
 footer img{
@@ -235,19 +235,21 @@ footer img{
 
 .columnfooter1{
     float: left;
-    width: 50%;
+    width: 40%;
     margin-left: 30px;
 }
 
 .columnfooter2{
     float: right;
-    width: 40%;
+    width: 50%;
     margin-right: 30px;
 }
 
 #formulario{
-    padding: 15px;
-    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    position:relative;
 }
 
 .secciones-forms{
@@ -255,18 +257,24 @@ footer img{
     margin-bottom: 10px;
 }
 
-#enviar{
-    text-align: center;
-    align-content: center;
+#mail{
+   float: left;
+   width: 75%;
 }
 
+#enviar{
+    float: right;
+    width: 25%;
+    text-align: center;
+ }
+
 input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
+    padding: 8px;
     border: 1px solid #ccc;
     margin-top: 6px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
     resize: vertical;
+    width:100%;
   }
   
   input[type=submit] {
@@ -275,13 +283,14 @@ input[type=text], select, textarea {
     padding: 12px 20px;
     border: none;
     cursor: pointer;
+    
   }
   
   input[type=submit]:hover {
     background-color: #45a049;
   }
 
-#mas, #mas2 {display:none;}
+#mas, #mas2, #mas3, #mas4, #mas5, #mas6, #mas7, #mas8, #mas9, #mas10{display:none;}
 
 
 .cajas{
@@ -312,47 +321,7 @@ input[type=text], select, textarea {
 
 .container {
     position: relative;
-  }
-
-* {
-    box-sizing: border-box;
-  }
-
-.mySlides {
-    display: none;
 }
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: #cc2c2c;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-.numbertext {
-    color: black;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
 
 .row-personajes{
     margin-right: 0px;
@@ -376,9 +345,10 @@ input[type=text], select, textarea {
 }
 
 #all-rights-reserved{
-    float: left;
-    align-content: flex-end;
     margin: 30px;
+    text-align: end;
+    float: left;
+
 }
 
 .bi-twitter, .bi-instagram, .bi-youtube, .bi-envelope-heart-fill{
@@ -392,8 +362,4 @@ input[type=text], select, textarea {
 
 .bi-twitter:hover, .bi-instagram:hover, .bi-youtube:hover, .bi-envelope-heart-fill:hover{
     color:#7e1d1d;
-}
-
-#anuncios:before{
-    content: "<i class="bi bi-megaphone-fill"></i>"
 }

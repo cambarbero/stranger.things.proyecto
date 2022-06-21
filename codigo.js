@@ -71,34 +71,116 @@ function ver_mas_o_menos2() {
     }
   }
 
+  function ver_mas_o_menos3() {
+    let masTexto = document.getElementById("mas3");
+    let botonTexto = document.getElementById("boton3");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos4() {
+    let masTexto = document.getElementById("mas4");
+    let botonTexto = document.getElementById("boton4");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos5() {
+    let masTexto = document.getElementById("mas5");
+    let botonTexto = document.getElementById("boton5");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos6() {
+    let masTexto = document.getElementById("mas6");
+    let botonTexto = document.getElementById("boton6");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos7() {
+    let masTexto = document.getElementById("mas7");
+    let botonTexto = document.getElementById("boton7");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos8() {
+    let masTexto = document.getElementById("mas8");
+    let botonTexto = document.getElementById("boton8");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos9() {
+    let masTexto = document.getElementById("mas9");
+    let botonTexto = document.getElementById("boton9");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
+
+  function ver_mas_o_menos10() {
+    let masTexto = document.getElementById("mas10");
+    let botonTexto = document.getElementById("boton10");
+  
+    if (masTexto.style.display === "none"){
+      botonTexto.innerHTML = "Leer menos";
+      masTexto.style.display = "inline";
+    }
+    else{
+      botonTexto.innerHTML = "Leer más";
+      masTexto.style.display = "none";
+    }
+  }
 // -------------
 
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-  
