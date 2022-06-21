@@ -281,7 +281,8 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
 
-#mas {display:none;}
+#mas, #mas2 {display:none;}
+
 
 .cajas{
     margin: 40px;
@@ -290,23 +291,23 @@ input[type=text], select, textarea {
     color:#cc2c2c;
   }
 
-#boton-ver-mas{
+.boton-ver-mas{
     text-align: center;
 }
 
-#boton-ver-mas :hover{
+.boton-ver-mas:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
 .fotos-personajes{
     float: left;
-    width: 30%;
+    width: 25%;
 }
 
 .descripcion-personajes{
     float: right;
-    width: 70%;
+    width: 75%;
 }
 
 .container {
@@ -324,11 +325,11 @@ input[type=text], select, textarea {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 50%;
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: #cc2c2c;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -345,11 +346,54 @@ input[type=text], select, textarea {
     background-color: rgba(0, 0, 0, 0.8);
   }
 
-  .numbertext {
-    color: #f2f2f2;
+.numbertext {
+    color: black;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
   }
 
+.row-personajes{
+    margin-right: 0px;
+}
+
+
+.row-personajes :after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.actores-link{
+    color: rgb(168, 150, 128);
+    text-decoration: none;
+}
+
+.actores-link:hover{
+    color: rgb(113, 101, 87);
+    text-decoration: underline;
+}
+
+#all-rights-reserved{
+    float: left;
+    align-content: flex-end;
+    margin: 30px;
+}
+
+.bi-twitter, .bi-instagram, .bi-youtube, .bi-envelope-heart-fill{
+    color:#cc2c2c;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.bi-twitter:hover, .bi-instagram:hover, .bi-youtube:hover, .bi-envelope-heart-fill:hover{
+    color:#7e1d1d;
+}
+
+#anuncios:before{
+    content: "<i class="bi bi-megaphone-fill"></i>"
+}
