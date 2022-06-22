@@ -5,30 +5,32 @@ dia = hoy.getDate();
 document.getElementById("fecha-de-hoy").innerHTML = "Hoy es " + dia + "/" + mes + "/" + año;
 
 // -------------
-
-$dias = document.getElementById("dias");
-$horas = document.getElementById("horas");
-$minutos = document.getElementById("minutos");
-$segundos = document.getElementById("segundos");
-
-const countdownDate = new Date("7 1, 2022 00:00:00").getTime()
+const $dias = document.getElementById('dias'),
+$horas = document.getElementById('horas'),
+$minutos = document.getElementById('minutos'),
+$segundos = document.getElementById('segundos');
+const FechaObjetivo = new Date('Jul 1, 2022 00:00:00').getTime();
 
 let interval = setInterval(function(){
-    const now = new Date().getTime();
+    
+    const FechaActual = new Date().getTime();
 
-    let distance = countdownDate - now;
+    
+    let distancia = FechaObjetivo - FechaActual;
 
-    let dias = Math.floor( distance / (1000 * 60 * 60 * 24) );
-    let horas = Math.floor( (distance % (1000*60*60*24)) / (1000*60*60) );
-    let minutos = Math.floor( (distance % (1000*60*60)) / (1000*60) );
-    let segundos = Math.floor( (distance % (1000*60)) / (1000) );
+    
+    let dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
+    let horas = Math.floor((distancia % (1000 * 60 * 60 * 24 )) / (1000 * 60 * 60));
+    let minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
+    let segundos = Math.floor((distancia % (1000 * 60 )) / (1000));
 
+    
     $dias.innerHTML = dias;
     $horas.innerHTML = horas;
     $minutos.innerHTML = minutos;
-    $segundos.innerHTML = ("0" + segundos).slice(-2);
+    $segundos.innerHTML = ('0' + segundos).slice(-2);
 
-}, 1000);
+  }, 1000);
 
 // -------------
 
@@ -182,5 +184,51 @@ function ver_mas_o_menos2() {
       masTexto.style.display = "none";
     }
   }
+
 // -------------
 
+function enviar_verificar(){
+  let OpcionIngles = document.formulario.ingles.value; 
+  let OpcionCondiciones = document.getElementById("terminos-y-condiciones");  
+
+  if (OpcionCondiciones.checked === true && OpcionIngles === "Bajo"){
+    alert("No cumplis con el nivel de inglés requerido")
+  }
+  if (OpcionCondiciones.checked === true && OpcionIngles != "Bajo" ){
+    alert("Formulario enviado")
+  }
+  else{
+    alert("No podemos aceptarte el formulario sin haber aceptado los terminos y condiciones")
+  }
+}
+
+// -------------
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}

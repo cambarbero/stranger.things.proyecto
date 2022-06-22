@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Temporadas | Stranger Things</title>
+    <title> Ser colaborador | Stranger Things</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -75,32 +75,77 @@
 </head>
 <body>
 
-    <footer>
-        <div id="icono-footer">
-            <img src="./imagenes/ST.png" alt="">
-        </div>
-
-        <div class="columnfooter1">
-            <h4>Contacto</h4>
-            <a href="https://twitter.com/StrangerNews11" class="bi-twitter" target="_blank"></a>
-            <a href="https://www.instagram.com/strangerthingss_updates/?hl=es" class="bi-instagram" target="_blank"></a>
-            <a href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA" class="bi-youtube" target="_blank"></a>
-            <a href="mailto: cbarbero@itba.edu.ar" class="bi-envelope-heart-fill" target="_blank"></a>
-            <br>
-            <br>
-            <br>
-        </div>
-
-        <div class="columnfooter2">
-            Ver Stranger Things en:
+    <div class="row-personajes">
+        <div class="cajas">
             
-                <a href="https://www.netflix.com/title/80057281" target="_blank"> <img  id="netflix-click" src="./imagenes/netflix1.png" alt=""></a>
+            <h3>Ser colaborador</h3>
+            <div class="subcajas">
+                Buenas, si te interesa ser editor y unirte a una comunidad que busca informar acerca de la serie original de Netflix Stranger Things, 
+                nos encantaria que formes parte del team de colaboradores, asi mantenemos la informacion de la serie al día.
+            </div>
 
+            <div class="container">
+                <div style="text-align:center">
+                  <h4>Contactanos</h4>
+                  <p>Dejanos tus datos y nosotros nos contactamos</p>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img src="./imagenes/posterST.jpeg" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <form name="formulario">
+                      <label for="nombre">Nombre/Apodo</label>
+                      <input name="nombre" type="texto" id="nombre" placeholder="Escribi tu nombre o apodo..." required>
+                      <label for="mail">Mail</label>
+                      <input name="mail" type="texto" id="mail" placeholder="Escribi tu mail..." required>
+                      <label for="ingles">Nivel de ingles</label>
+                      <select name="ingles" id="ingles" required>
+                        <option id="bajo" value="Bajo">Bajo</option>
+                        <option id="basico" value="Básico">Básico</option>
+                        <option id="avanzado" value="Avanzado">Avanzado</option>
+                      </select>
+                      <label for="comentario">Comentario</label>
+                      <textarea id="comentario" placeholder="Escribi algún mensaje o contacto extra que te parezca relevante compartir..." style="height:170px"></textarea>
+                      <input name="terminos-y-condiciones" type="checkbox" id="terminos-y-condiciones" value="terminos-y-condiciones">
+                      <label for="terminos-y-condiciones" required > Acepto los terminos y condiciones </label>
+                      <br>
+                      <br>
+                      <input type="submit" onclick="enviar_verificar()" value="Enviar">
+                    </form>
+                  </div>
+                </div>
+              </div>
+        
         </div>
-        <div id="all-rights-reserved">
-            © Stranger Things. Todos los derechos reservados
-        </div>
-    </footer>  
+    </div>
+    
+    <footer>
+            <div id="icono-footer">
+                <img src="./imagenes/ST.png" alt="">
+            </div>
+
+            <div class="columnfooter1">
+                <h4>Contacto</h4>
+                <a href="https://twitter.com/StrangerNews11" class="bi-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/strangerthingss_updates/?hl=es" class="bi-instagram" target="_blank"></a>
+                <a href="https://www.youtube.com/channel/UC5ZiUaIJ2b5dYBYGf5iEUrA" class="bi-youtube" target="_blank"></a>
+                <a href="mailto: cbarbero@itba.edu.ar" class="bi-envelope-heart-fill" target="_blank"></a>
+                <br>
+                <br>
+                <br>
+            </div>
+
+            <div class="columnfooter2">
+                Ver Stranger Things en:
+                
+                    <a href="https://www.netflix.com/title/80057281" target="_blank"> <img  id="netflix-click" src="./imagenes/netflix1.png" alt=""></a>
+
+            </div>
+            <div id="all-rights-reserved">
+                © Stranger Things. Todos los derechos reservados
+            </div>
+    </footer>
 
     <div>
         <audio id="musica" src="./musica/Kate Bush - Running Up That Hill .mp3" autoplay loop>

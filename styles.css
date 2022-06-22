@@ -121,13 +121,13 @@ nav{
 .column1{
     float: left;
     width: 60%;
-    padding: 0px;
+    padding-right: 0px;
 }
 
 .column2{
     float: right;
     width: 40%;
-    padding: 0px;
+    padding:0px
 }
 
 .row{
@@ -245,51 +245,6 @@ footer img{
     margin-right: 30px;
 }
 
-#formulario{
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    position:relative;
-}
-
-.secciones-forms{
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#mail{
-   float: left;
-   width: 75%;
-}
-
-#enviar{
-    float: right;
-    width: 25%;
-    text-align: center;
- }
-
-input[type=text], select, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    resize: vertical;
-    width:100%;
-  }
-  
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    
-  }
-  
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
 #mas, #mas2, #mas3, #mas4, #mas5, #mas6, #mas7, #mas8, #mas9, #mas10{display:none;}
 
 
@@ -307,6 +262,7 @@ input[type=text], select, textarea {
 .boton-ver-mas:hover{
     text-decoration: underline;
     cursor: pointer;
+    color: rgb(113, 101, 87);
 }
 
 .fotos-personajes{
@@ -317,10 +273,6 @@ input[type=text], select, textarea {
 .descripcion-personajes{
     float: right;
     width: 75%;
-}
-
-.container {
-    position: relative;
 }
 
 .row-personajes{
@@ -334,12 +286,13 @@ input[type=text], select, textarea {
     clear: both;
 }
 
-.actores-link{
+.actores-y-personajes-link{
     color: rgb(168, 150, 128);
     text-decoration: none;
+    display: inline-block;
 }
 
-.actores-link:hover{
+.actores-y-personajes-link:hover{
     color: rgb(113, 101, 87);
     text-decoration: underline;
 }
@@ -348,7 +301,6 @@ input[type=text], select, textarea {
     margin: 30px;
     text-align: end;
     float: left;
-
 }
 
 .bi-twitter, .bi-instagram, .bi-youtube, .bi-envelope-heart-fill{
@@ -362,4 +314,100 @@ input[type=text], select, textarea {
 
 .bi-twitter:hover, .bi-instagram:hover, .bi-youtube:hover, .bi-envelope-heart-fill:hover{
     color:#7e1d1d;
+}
+
+#netflix-click{
+    width: 200px;
+    height: 100px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+input[type=texto], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+.container {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 26, 0.85);
+    padding: 10px;
+  }
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
 }
