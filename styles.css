@@ -30,12 +30,8 @@ html *
     margin-right: 10px;
 }
 
-nav{
-    position:sticky;
-    top:0;
-}
 
-.navbar-light{
+.navbar{
     background: black;
     width: 100%;
 }
