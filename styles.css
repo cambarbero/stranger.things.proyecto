@@ -316,10 +316,15 @@ footer img{
     color:#7e1d1d;
 }
 
-#netflix-click{
-    width: 200px;
+#boton-netflix{
+    text-align: center;
+}
+
+#netflix{
+    width: 180px;
     height: 100px;
 }
+
 
 * {
     box-sizing: border-box;
